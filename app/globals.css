@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #fff8f6;
+}
+
+.border2 {
+  border: 1px solid #000;
+}
+
+.scroll-hidden {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.gradient {
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(#dfdddd, rgb(97, 96, 96));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
