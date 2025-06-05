@@ -3,9 +3,16 @@ import Image from "next/image";
 import { Sf_pro_bold, Sf_pro_medium } from "../utils/font";
 
 const ButtonCtn = ({ text }: any) => {
+  const handleClick = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <button
+        onClick={handleClick}
         className={` bg-[#F3A21B] hover:opacity-80 cursor-pointer w-fit  capitalize ${Sf_pro_bold.className} rounded-full md:px-[2.6rem] px-[2rem] py-[0.8rem] text-[#3C1702]`}
         style={
           {
