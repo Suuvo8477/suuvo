@@ -96,6 +96,9 @@ const Topfeatures = () => {
 
   useEffect(() => {
     // 👇 Only run scroll on mobile
+    if (globalThis.innerWidth < 700) {
+      return;
+    }
     scrollByCard("next");
   }, [scrollRef]);
 
