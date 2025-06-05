@@ -95,6 +95,7 @@ const Footer = () => {
 
   return (
     <div
+      id="contact"
       className={` overflow-clip  pt-[5rem] md:gap-0 gap-[5rem]  bg-[#FFF8F6] flex flex-col relative w-full ${Sf_pro_medium.className}`}
     >
       {/* Modal Container */}
@@ -165,10 +166,7 @@ const Footer = () => {
           </div>
 
           {/* Right Section: Form */}
-          <form
-            id="contact"
-            className="bg-white text-center rounded-[30px] px-[4%]  md:px-10 py-[7%] md:py-10 flex flex-col gap-2 md:gap-4 text-sm md:text-base"
-          >
+          <form className="bg-white text-center rounded-[30px] px-[4%]  md:px-10 py-[7%] md:py-10 flex flex-col gap-2 md:gap-4 text-sm md:text-base">
             <div className="flex flex-col gap-[0.2rem] md:gap-[0.4rem]">
               <h3
                 className={`md:text-3xl text-2xl font-bold text-black ${Sf_pro_bold.className}`}
