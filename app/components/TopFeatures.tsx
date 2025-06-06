@@ -7,6 +7,7 @@ import gamification from "@/public/landingPage/gamification.webp";
 import sports from "@/public/landingPage/sports.webp";
 import education from "@/public/landingPage/education.webp";
 import shops from "@/public/landingPage/shops.webp";
+import token from "@/public/landingPage/token.webp";
 
 import fullbodythumb from "@/public/landingPage/fullbodythumb.webp";
 import aithumb from "@/public/landingPage/aithumb.webp";
@@ -59,6 +60,16 @@ const Topfeatures = () => {
       thumbnail: sportsthumb,
       bg: "#FFC6E2",
       text: "#50072B",
+    },
+    {
+      title: " Suuvo Tokenization",
+      subtitle:
+        "Empower your digital identity. With SUUVO Tokenization, turn your moments, achievements, and content into unique digital assets that unlock new rewards and ownership.",
+      tags: ["Token", "Ownership"],
+      image: token,
+      thumbnail: gamificationthumb,
+      bg: "#FFEAC6",
+      text: "#8B5801",
     },
     {
       title: "Education integration",
