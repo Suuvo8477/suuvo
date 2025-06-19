@@ -9,6 +9,7 @@ const Nav = () => {
     { id: "home", label: "Home", href: "#home" },
     { id: "features", label: "Features", href: "#features" },
     { id: "pre-register", label: "Pre-register", href: "#pre-register" },
+    { id: "privacy-policy", label: "Privacy Policy", href: "https://www.iubenda.com/privacy-policy/87850088" },
   ];
   return (
     <>
@@ -22,6 +23,7 @@ const Nav = () => {
             <a
               key={item.id}
               href={item.href}
+              target={item?.id == 'privacy-policy' ? '_blank' : ''}
               className="text-black hover:text-[#F3A21B] transition-colors duration-200"
             >
               {item.label}

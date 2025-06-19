@@ -73,7 +73,7 @@ const Footer = () => {
       setStatus("error");
       setFeedback(
         err?.response?.data?.message ||
-          "Something went wrong. Please try again."
+        "Something went wrong. Please try again."
       );
     }
   };
@@ -132,17 +132,31 @@ const Footer = () => {
             <div
               className={`md:mt-4 mt-3 flex items-center gap-4  ${Sf_pro_medium.className}`}
             >
-              <button
-                className={`bg-white gap-2 cursor-pointer hover:bg-gray-400 flex items-center px-7 py-4 rounded-full text-sm  `}
+              <div
+                className={`md:mt-4 mt-3 flex items-center gap-4  ${Sf_pro_medium.className}`}
               >
-                <Image src={AppleLogo} alt="applelogo" className="w-[1.3rem]" />
-                <Image
-                  src={GooglePlayLogo}
-                  alt="GooglePlayLogo"
-                  className="w-[1.3rem]"
-                />
-                Download app
-              </button>{" "}
+                <div
+                  className={`bg-white gap-2 cursor-pointer hover:bg-gray-400 flex items-center px-7 py-4 rounded-full text-sm  `}
+                >
+                  <a href="https://apps.apple.com/in/app/suuvo/id6740204870" className="store-btn" target="_blank">
+                    <Image src={AppleLogo} alt="applelogo" className="w-[1.3rem]" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.llynkup.app&hl=en" className="store-btn" target="_blank">
+                    <Image
+                      src={GooglePlayLogo}
+                      alt="GooglePlayLogo"
+                      className="w-[1.3rem]"
+                    />
+                  </a>
+
+
+                  Download app
+                </div>{" "}
+                <div className="  border-r text-black/0   border-r-black/50 opacity-50">
+                  |
+                </div>
+                <span className="text-lg opacity-[50%] ">Coming soon</span>
+              </div>
               <div className="  border-r text-black/0   border-r-black/50 opacity-50">
                 |
               </div>
@@ -211,11 +225,10 @@ const Footer = () => {
               />
               {feedback && status !== "idle" && (
                 <div
-                  className={`flex items-center gap-2 text-sm md:text-base px-4 py-3 rounded-md transition-all duration-300 ${
-                    status === "success"
+                  className={`flex items-center gap-2 text-sm md:text-base px-4 py-3 rounded-md transition-all duration-300 ${status === "success"
                       ? "bg-green-100 text-green-800"
                       : "bg-red-100 text-red-800"
-                  }`}
+                    }`}
                 >
                   {status === "success" ? (
                     <svg
@@ -254,13 +267,11 @@ const Footer = () => {
                 <button
                   onClick={handleSubmit}
                   disabled={status === "loading"}
-                  className={`bg-[#F3A21B] flex items-center justify-center gap-2 w-fit capitalize ${
-                    Sf_pro_bold.className
-                  } md:rounded-full max-w-full px-[3.5rem] py-[0.8rem] rounded-[17px] md:px-[5rem] text-lg mt-2 md:py-[1rem] cursor-pointer ${
-                    status === "loading"
+                  className={`bg-[#F3A21B] flex items-center justify-center gap-2 w-fit capitalize ${Sf_pro_bold.className
+                    } md:rounded-full max-w-full px-[3.5rem] py-[0.8rem] rounded-[17px] md:px-[5rem] text-lg mt-2 md:py-[1rem] cursor-pointer ${status === "loading"
                       ? "opacity-60 cursor-not-allowed"
                       : "hover:opacity-80"
-                  } text-[#3C1702]`}
+                    } text-[#3C1702]`}
                 >
                   {status === "loading" ? (
                     <span className="flex items-center gap-2">

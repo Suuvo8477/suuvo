@@ -1,0 +1,14 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "LM5BPKZ69S.com.llynkup.app",
+                "paths": [
+                    "/post*",
+                    "/profile*"
+                ]
+            }
+        ]
+    }
+}

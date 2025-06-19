@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.llynkup.app",
+      "sha256_cert_fingerprints":
+        ["0F:B5:91:1C:56:C1:F2:17:9D:BF:E7:64:B1:A6:4B:0D:86:B3:E2:63:F5:7A:BD:6C:0D:B8:33:0C:FD:25:0C:E6"]
+    }
+  }
+]
+ 
