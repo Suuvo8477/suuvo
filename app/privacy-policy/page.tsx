@@ -360,7 +360,7 @@ const PrivacyPolicyPage = () => {
         User, where required.
       </p>
       <br />
-      <p className="text-[13px] text-gray-700">
+      <p className="text-[13px] font-bold text-gray-700">
         Mobile data will not be sold or shared with any external vendor or Third
         Party. This service is exclusively between Suuvo, Inc, and the end
         customer.
@@ -485,7 +485,7 @@ const PrivacyPolicyPage = () => {
               </p>
             </div>
 
-            <hr className="h-px w-[100%] border-0 bg-gray-300 my-2" />
+            <hr className="h-px w-[100%] border-0 bg-gray-300 my-1" />
             <div>
               <strong className="block font-semibold mb-1">
                 Legal information
@@ -497,44 +497,6 @@ const PrivacyPolicyPage = () => {
             </div>
           </div>
         )}
-      </div>
-
-      <hr className="h-px w-[100%] border-0 bg-gray-300 my-8" />
-
-      <div className="mt-6 text-[12px] text-gray-600 leading-relaxed mb-8">
-        <p className="mb-1">
-          <strong className="font-semibold">Latest update:</strong> May 15, 2025
-        </p>
-        <p>
-          This document has been created with the{" "}
-          <a
-            href="https://www.iubenda.com/en/privacy-and-cookie-policy-generator"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold underline"
-          >
-            Privacy and Cookie Policy Generator
-          </a>
-          . See also the{" "}
-          <a
-            href="https://www.iubenda.com/en/terms-and-conditions-generator"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold underline"
-          >
-            Terms and Conditions Generator.
-          </a>{" "}
-          iubenda hosts this content and only collects{" "}
-          <a
-            href="https://www.iubenda.com/privacy-policy/65675001"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold underline"
-          >
-            the Personal Data strictly necessary
-          </a>{" "}
-          for it to be provided.
-        </p>
       </div>
     </main>
   );
