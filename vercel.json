@@ -5,6 +5,12 @@
       "has": [{ "type": "host", "value": "suuvo.com" }],
       "destination": "/.well-known/assetlinks.json",
       "statusCode": 200
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "suuvo.com" }],
+      "destination": "https://www.suuvo.com/$1",
+      "statusCode": 301
     }
   ]
 }
