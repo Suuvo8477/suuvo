@@ -1,13 +1,10 @@
 {
-  "headers": [
+  "redirects": [
     {
       "source": "/.well-known/assetlinks.json",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
+      "has": [{ "type": "host", "value": "suuvo.com" }],
+      "destination": "/.well-known/assetlinks.json",
+      "statusCode": 200
     }
   ]
 }
