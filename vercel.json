@@ -13,28 +13,18 @@
       "statusCode": 301
     }
   ],
-  "headers": [
+  "rewrites": [
     {
-      "source": "/.well-known/assetlinks.json",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "inline"
-        }
-      ]
+      "source": "/profile",
+      "destination": "/"
     },
     {
-      "source": "/.well-known/apple-app-site-association",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
+      "source": "/story",
+      "destination": "/"
+    },
+    {
+      "source": "/post",
+      "destination": "/"
     }
   ]
 }
