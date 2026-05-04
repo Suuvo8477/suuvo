@@ -5,6 +5,7 @@ import { InstagramIcon, LocationIcon, MailIcon, XIcon, YoutubeIcon } from '@/com
 import Logo from '@/components/shared/logo'
 import Button from '@/components/button'
 import CTASection from '@/views/home/CTASection'
+import WishListButton from '@/views/shared/WishListButton'
 
 const navigationLinks: string[] = ['Home', 'Momentz', 'Live', 'PK Battles', 'Shop', 'Love Notes', 'AI Features']
 
@@ -26,9 +27,7 @@ const Footer: React.FC = () => {
               All in one place.
             </p>
 
-            <Button type='button' variant='primary' className='lg:w-63.5 w-full mt-5'>
-              Join Waitlist
-            </Button>
+            <WishListButton className='lg:w-63.5 w-full mt-5' />
           </div>
 
           <div className='grid grid-cols-2 gap-x-1 sm:gap-x-8 md:hidden'>

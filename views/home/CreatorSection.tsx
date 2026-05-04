@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from 'react'
 import Button from '@/components/button'
 import Image from 'next/image'
+import WishListButton from '../shared/WishListButton'
 
 type Creator = {
   id: number
@@ -124,7 +125,7 @@ export default function CreatorSection(): React.ReactElement {
       {/* ===== DESKTOP CARDS ===== */}
       <div className='relative flex items-center justify-center py-10  px-4 overflow-hidden'>
         <svg
-          className='absolute inset-0 max-md:translate-y-1/2 w-[900px] md:w-full h-40 sm:h-50 md:h-full pointer-events-none'
+          className='absolute inset-0 max-md:translate-y-1/2 w-225 md:w-full h-40 sm:h-50 md:h-full pointer-events-none'
           viewBox='0 0 1440 236'
           preserveAspectRatio='none'
           xmlns='http://www.w3.org/2000/svg'
@@ -179,7 +180,7 @@ export default function CreatorSection(): React.ReactElement {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div
-                  className='rounded-3xl overflow-hidden transition-all duration-500 sm:w-[240px] sm:h-[270px] w-[175px] h-[197px]'
+                  className='rounded-3xl overflow-hidden transition-all duration-500 sm:w-60 sm:h-67.5 w-43.75 h-49.25'
                   style={{
                     padding: '12px',
                     background: creator.border,
@@ -213,9 +214,7 @@ export default function CreatorSection(): React.ReactElement {
           Built to empower creators with tools, freedom, and opportunities to grow, monetize content, and build
           meaningful, lasting digital presence.
         </p>
-        <Button variant='primary' className='min-w-56.25'>
-          Join Waitlist
-        </Button>
+        <WishListButton className='min-w-56.25' />
       </div>
     </section>
   )

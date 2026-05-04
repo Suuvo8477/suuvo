@@ -3,8 +3,8 @@
 import React, { useEffect, useRef } from 'react'
 import Typography from '@/components/typography'
 import ScrollStackCard from './ScrollStackCard'
-import Button from '@/components/button'
 import { FeatureCard } from '@/types'
+import WishListButton from '../shared/WishListButton'
 
 const CARDS: FeatureCard[] = [
   {
@@ -121,7 +121,7 @@ const ScrollStackSection: React.FC = () => {
             <br />
             Modern Social
           </Typography>
-          <Typography variant='p3' className='text-[--color-text-primary] opacity-60 max-w-[515px]'>
+          <Typography variant='p3' className='text-[--color-text-primary] opacity-60 max-w-128.75'>
             A modern platform to share, explore, and interact freely with a simple, fast, and enjoyable experience
             without overwhelming users.
           </Typography>
@@ -129,9 +129,8 @@ const ScrollStackSection: React.FC = () => {
           {/* Premium CTA Button */}
           <div className='relative group'>
             <div className='absolute inset-0 bg-linear-to-r from-[#ef9d13] via-[#ff3d9c] to-[#ff99cb] rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500' />
-            <Button variant='primary' className='min-w-50'>
-              Join Witlist
-            </Button>
+
+            <WishListButton className='min-w-50' />
           </div>
         </div>
       </div>

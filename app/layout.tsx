@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
-import { Mona_Sans, Shadows_Into_Light_Two } from 'next/font/google'
+import { Mona_Sans, Shadows_Into_Light_Two, Geist } from 'next/font/google'
 import './globals.css'
 import StoreProvider from '@/lib/StoreProvider'
+import { cn } from '@/lib/utils'
+import { Toaster } from '@/components/ui/sonner'
+
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
 
 const monaSans = Mona_Sans({
   variable: '--font-mona-sans',
@@ -27,9 +31,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className={`${monaSans.variable} ${shadowsIntoLightTwo.variable} antialiased`}>
+    <html
+      lang='en'
+      className={cn('antialiased', monaSans.variable, shadowsIntoLightTwo.variable, 'font-sans', geist.variable)}
+    >
       <body>
         <StoreProvider>{children}</StoreProvider>
+        <Toaster position='top-center' closeButton />
       </body>
     </html>
   )

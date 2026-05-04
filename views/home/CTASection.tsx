@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react'
 import PhotoCard from './PhotoCard'
 import Button from '@/components/button'
 import { ListIcon } from '@/components/icons'
+import { toast } from 'sonner'
 
 type Card = {
   id: number
@@ -45,6 +48,49 @@ const cards: Card[] = [
 ]
 
 export default function CTASection(): React.ReactElement {
+  const [isLoading, setIsLoading] = React.useState(false)
+
+  // Handle email submission to join wait-list
+  const handleSubmit = async (e: any) => {
+    e.preventDefault()
+
+    const email = e.target?.email?.value
+
+    if (!email || typeof email !== 'string') {
+      toast.warning('Please enter an email address.')
+
+      return
+    }
+
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+
+    setIsLoading(true)
+
+    try {
+      const res = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, timezone })
+      })
+
+      const data = await res.json()
+
+      e.target?.reset()
+      setIsLoading(false)
+
+      if (data.success) {
+        toast.success('Added to waitlist!')
+      } else {
+        throw new Error(data.error || 'Failed to join waitlist. Please try again.')
+      }
+    } catch (error: any) {
+      toast.error(error?.message || 'An error occurred. Please try again later.')
+      setIsLoading(false)
+    }
+  }
+
   return (
     <section className='pb-15 md:pb-20 lg:pb-30 s-container'>
       <div className='rounded-[20px] lg:rounded-4xl  bg-[linear-gradient(90deg,#EF9F22_0%,#DE127B_100%)] pt-8 lg:pt-16 overflow-hidden px-5'>
@@ -65,14 +111,21 @@ export default function CTASection(): React.ReactElement {
             )}
           </ul>
         </div>
-        <div className='flex items-center bg-white rounded-full pl-6 pr-2 lg:pr-1.5 py-2 w-full max-w-121 mx-auto mb-8 lg:mb-15'>
+        <form
+          onSubmit={handleSubmit}
+          className='flex items-center bg-white rounded-full pl-6 pr-2 lg:pr-1.5 py-2 w-full max-w-121 mx-auto mb-8 lg:mb-15'
+        >
           <input
             type='email'
+            id='email'
+            name='email'
             placeholder='Email Address'
             className='bg-transparent outline-none text-text-primary placeholder:text-text-primary font-medium text-[16px] w-full leading-6 tracking-[-0.02em]'
           />
-          <Button className='min-w-30 h-11! text-sm!'>Submit</Button>
-        </div>
+          <Button type='submit' className='min-w-34 h-11 text-base' disabled={isLoading}>
+            {isLoading ? 'Submitting...' : 'Submit'}
+          </Button>
+        </form>
         <div className='relative mt-8 flex items-end justify-center'>
           <div className='flex items-end justify-center -mb-16 sm:-mb-20 lg:-mb-25'>
             {cards.map(card => (

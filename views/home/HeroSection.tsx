@@ -1,9 +1,9 @@
 'use client'
 
-import Button from '@/components/button'
 import Typography from '@/components/typography'
 import Image from 'next/image'
 import React from 'react'
+import WishListButton from '../shared/WishListButton'
 
 const HeroSection = () => {
   const containerRef = React.useRef<HTMLDivElement>(null)
@@ -66,9 +66,8 @@ const HeroSection = () => {
           </div>
 
           <div className='flex flex-col md:flex-col-reverse gap-5 lg:gap-4 sm:max-w-fit max-w-full'>
-            <Button variant='primary' className='min-w-56.25 w-full lg:w-auto'>
-              Join Waitlist
-            </Button>
+            <WishListButton className='min-w-56.25 w-full lg:w-auto' />
+
             <div className='w-full flex justify-center sm:justify-start items-center gap-2'>
               <div className='flex'>
                 {[3, 2, 1].map(i => (

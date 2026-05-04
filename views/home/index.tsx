@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from './HeroSection'
 import SocialSection from './SocialSection'
 import ScrollStackSection from './ScrollStackSection'
@@ -6,6 +5,7 @@ import BenefitsSection from './BenefitsSection'
 import CreatorSection from './CreatorSection'
 import FAQSection from './FAQSection'
 import CTASection from './CTASection'
+import WaitListModal from '@/components/overlays/WaitListModal'
 
 const Home = () => {
   return (
@@ -29,6 +29,8 @@ const Home = () => {
           <FAQSection />
         </div>
       </div>
+
+      <WaitListModal />
     </>
   )
 }

@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import pageTitleReducer from './features/pageTitle/pageTitleSlice'
+import waitListReducer from './features/waitList/waitListSlice'
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      pageTitle: pageTitleReducer
+      pageTitle: pageTitleReducer,
+      waitList: waitListReducer
     }
   })
 }
