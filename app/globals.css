@@ -1,29 +1,99 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-body {
-  width: 100%;
-  height: auto;
-  background-color: #fff8f6;
+:root {
+  /* Light Theme - Base Colors */
+  --background: #ffffff;
+  --foreground: #1e1e1e;
+
+  /* Primary Colors */
+  --primary-blue: #201b6d;
+  --primary-black: #eb0b7b;
+  --primary-yellow: #ef9d13;
+
+  /* Gradient Colors */
+  --gradient-pink-start: #ff99cb;
+  --gradient-pink-end: #ff3d9c;
+  --gradient-purple-start: #a6a3ff;
+  --gradient-purple-end: #645ffe;
+  --gradient-yellow-start: #ffd68f;
+  --gradient-yellow-end: #ffb73d;
+  --gradient-blue-start: #70b4ff;
+  --gradient-blue-end: #1f88ff;
+
+  /* Text Colors */
+  --text-primary: #1e1e1e;
+  --text-secondary: #ffffff;
+  --text-pink: #4d0138;
+  --text-yellow: #6d4500;
+  --text-blue: #020070;
+
+  /* Font */
+  --mona-font: var(--font-mona-sans);
+  --shadows-into-light-two-font: var(--font-shadows-into-light-two);
 }
 
-.border2 {
-  border: 1px solid #000;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Primary Colors */
+  --color-primary-blue: var(--primary-blue);
+  --color-primary-black: var(--primary-black);
+  --color-primary-yellow: var(--primary-yellow);
+
+  /* Gradient Colors */
+  --color-gradient-pink-start: var(--gradient-pink-start);
+  --color-gradient-pink-end: var(--gradient-pink-end);
+  --color-gradient-purple-start: var(--gradient-purple-start);
+  --color-gradient-purple-end: var(--gradient-purple-end);
+  --color-gradient-yellow-start: var(--gradient-yellow-start);
+  --color-gradient-yellow-end: var(--gradient-yellow-end);
+  --color-gradient-blue-start: var(--gradient-blue-start);
+  --color-gradient-blue-end: var(--gradient-blue-end);
+
+  /* Text Colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-pink: var(--text-pink);
+  --color-text-yellow: var(--text-yellow);
+  --color-text-blue: var(--text-blue);
+
+  /* Font */
+  --font-primary: var(--mona-font);
+  --font-shadow-light: var(--shadows-into-light-two-font);
+
+  @keyframes gradient-move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  --animate-gradient-move: gradient-move 5s ease infinite;
 }
 
-.scroll-hidden {
-  overflow: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-primary;
+  }
 }
 
-.scroll-hidden::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+@layer components {
+  .s-container {
+    @apply w-full max-w-326 mx-auto px-5 sm:px-6 lg:px-8;
+  }
 }
 
-.gradient {
-  /* font-size: 72px; */
-  background: -webkit-linear-gradient(#dfdddd, rgb(97, 96, 96));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
 }

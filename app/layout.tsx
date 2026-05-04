@@ -1,25 +1,36 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import LenisProvider from "./utils/LenisProvider";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import type { Metadata } from 'next'
+import { Mona_Sans, Shadows_Into_Light_Two } from 'next/font/google'
+import './globals.css'
+import StoreProvider from '@/lib/StoreProvider'
+
+const monaSans = Mona_Sans({
+  variable: '--font-mona-sans',
+  subsets: ['latin'],
+  display: 'swap'
+})
+
+const shadowsIntoLightTwo = Shadows_Into_Light_Two({
+  variable: '--font-shadows-into-light-two',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400'
+})
 
 export const metadata: Metadata = {
-  title: "The Future of Social Media",
-  description:
-    "A new way to connect, create, and engage. Experience a social media platform that goes beyond likes—built for real connections, privacy, and engagemen",
-};
+  title: 'Suuvo ',
+  description: 'A Better Way to Be Social, For Real'
+}
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={``}>
-        <LenisProvider>{children}</LenisProvider>
+    <html lang='en' className={`${monaSans.variable} ${shadowsIntoLightTwo.variable} antialiased`}>
+      <body>
+        <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
-  );
+  )
 }

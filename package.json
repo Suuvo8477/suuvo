@@ -1,29 +1,54 @@
 {
-  "name": "suuvo",
-  "version": "0.1.0",
+  "name": "suuvo-landing-page",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "stylelint": "stylelint \"**/*.{css,scss,js,jsx,ts,tsx}\"",
+    "stylelint:fix": "stylelint \"**/*.{css,scss,js,jsx,ts,tsx}\" --fix",
+    "make:module": "ts-node --project scripts/tsconfig.json scripts/make-module.ts",
+    "make:type": "ts-node --project scripts/tsconfig.json scripts/make-type.ts"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
-    "axios": "^1.9.0",
-    "bootstrap-icons": "^1.13.1",
-    "framer-motion": "^12.15.0",
-    "gsap": "^3.13.0",
-    "next": "15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@reduxjs/toolkit": "^2.1.0",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.3.4",
+    "lucide-react": "^0.544.0",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "react-redux": "^9.2.0",
+    "tailwind-merge": "^3.4.0",
+    "js-cookie": "^3.0.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/crypto-js": "^4.2.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.19.27",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/js-cookie": "^3.0.6",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.25.0",
+    "stylelint-use-logical-spec": "^5.0.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
