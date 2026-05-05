@@ -90,122 +90,120 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className=' grid justify-center'>
-        <div className='mt-10 md:mt-14 lg:mt-18 min-w-max flex items-center justify-center gap-3 md:gap-6.5'>
-          {/* Column 1 */}
+      <div className='mt-10 md:mt-14 lg:mt-18 flex items-center justify-center gap-3 md:gap-[1.5%]'>
+        {/* Column 1 */}
+        <div
+          className='rounded-[10px] md:rounded-[20px] lg:rounded-[30px] min-w-34.75 md:min-w-auto md:w-[18.5%] aspect-[0.61/1] will-change-transform'
+          style={{
+            transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
+          }}
+        >
+          <Image
+            src='/images/hero-1.png'
+            alt='hero-1'
+            width={285}
+            height={467}
+            className='w-full h-full object-cover object-center rounded-[10px] md:rounded-[20px] lg:rounded-[30px] '
+          />
+        </div>
+
+        {/* Column 2 */}
+        <div className='flex flex-col gap-3 md:gap-5.5 min-w-34.75 md:min-w-auto md:w-[18.5%] '>
+          {/* Image 2 */}
           <div
-            className='rounded-[10px] sm:rounded-[20px] md:rounded-[30px] min-w-34.75 md:w-71.25 lg:w-[20%] max-w-35 sm:max-w-60 md:max-w-85 aspect-[0.61/1] will-change-transform'
+            className=' w-full aspect-[0.87/1] rounded-[10px] md:rounded-[20px] lg:rounded-[30px] will-change-transform'
             style={{
               transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
             }}
           >
             <Image
-              src='/images/hero-1.png'
-              alt='hero-1'
-              width={285}
-              height={467}
-              className='w-full h-full object-cover object-center rounded-[10px] sm:rounded-[20px] md:rounded-[30px] '
+              src='/images/hero-2.png'
+              alt='hero-2'
+              height={336}
+              width={293}
+              className='rounded-[10px] md:rounded-[20px] lg:rounded-[30px] w-full h-full object-cover object-center'
             />
           </div>
-
-          {/* Column 2 */}
-          <div className='flex flex-col gap-3 md:gap-5.5 lg:w-[20%] max-w-35 sm:max-w-60 md:max-w-85'>
-            {/* Image 2 */}
-            <div
-              className='min-w-35.75 md:w-73.25 lg:w-full max-w-35 sm:max-w-60 md:max-w-85 aspect-[0.87/1] rounded-[10px] sm:rounded-[20px] md:rounded-[30px] will-change-transform'
-              style={{
-                transform: 'translate3d(calc(var(--mx) * 45px), calc(var(--my) * 45px), 0)'
-              }}
-            >
-              <Image
-                src='/images/hero-2.png'
-                alt='hero-2'
-                height={336}
-                width={293}
-                className='rounded-[10px] sm:rounded-[20px] md:rounded-[30px] w-full h-full object-cover object-center'
-              />
+          {/* Stats Card 1 */}
+          <div
+            className=' aspect-[0.99/1] w-full flex flex-col justify-between px-3 py-3.5 md:px-6 md:py-7 rounded-[10px] md:rounded-[20px] lg:rounded-[30px] bg-linear-to-b from-gradient-pink-start to-gradient-pink-end text-white will-change-transform'
+            style={{
+              transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
+            }}
+          >
+            <Typography variant='h2'>2k+</Typography>
+            <div className='pt-4 border-t border-t-white/24'>
+              <Typography variant='p1' className='text-[10px]/[1.2]! sm:text-xl!  max-w-50'>
+                Early signups on the waitlist
+              </Typography>
             </div>
-            {/* Stats Card 1 */}
-            <div
-              className='min-w-35.75 md:w-73.25 aspect-[0.99/1] lg:w-full max-w-35 sm:max-w-60 md:max-w-85 flex flex-col justify-between px-3 py-3.5 sm:px-6 sm:py-7 rounded-[10px] sm:rounded-[20px] md:rounded-[30px] bg-linear-to-b from-gradient-pink-start to-gradient-pink-end text-white will-change-transform'
-              style={{
-                transform: 'translate3d(calc(var(--mx) * 65px), calc(var(--my) * 65px), 0)'
-              }}
-            >
-              <Typography variant='h2'>2k+</Typography>
-              <div className='pt-4 border-t border-t-white/24'>
-                <Typography variant='p1' className='max-w-50'>
-                  Early signups on the waitlist
-                </Typography>
-              </div>
+          </div>
+        </div>
+
+        {/* Column 3 */}
+        <div
+          className='rounded-[10px] md:rounded-[20px] lg:rounded-[30px] min-w-34.75 md:min-w-auto md:w-[18.5%]  aspect-[0.61/1] will-change-transform'
+          style={{
+            transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
+          }}
+        >
+          <Image
+            src='/images/hero-3.png'
+            alt='hero-3'
+            width={285}
+            height={467}
+            className='w-full h-full object-cover object-center rounded-[10px] md:rounded-[20px] lg:rounded-[30px]'
+          />
+        </div>
+
+        {/* Column 4 */}
+        <div className='flex flex-col gap-3 md:gap-5.5 min-w-34.75 md:min-w-auto md:w-[18.5%] '>
+          {/* Stats Card 2 */}
+          <div
+            className=' aspect-[.99/1] w-full flex flex-col justify-between px-3 py-3.5 md:px-6 md:py-7 rounded-[10px] md:rounded-[20px] lg:rounded-[30px] bg-linear-to-b from-gradient-purple-start to-gradient-purple-end text-white will-change-transform'
+            style={{
+              transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
+            }}
+          >
+            <Typography variant='h2'>30+</Typography>
+            <div className='pt-1 sm:pt-4 border-t border-t-white/24'>
+              <Typography variant='p1' className='text-[10px]/[1.2]! sm:text-xl! max-w-50'>
+                Private communities getting ready
+              </Typography>
             </div>
           </div>
 
-          {/* Column 3 */}
+          {/* Image 4 */}
           <div
-            className='rounded-[10px] sm:rounded-[20px] md:rounded-[30px] min-w-34.75 md:w-71.25 lg:w-[20%] max-w-35 sm:max-w-60 md:max-w-85 aspect-[0.61/1] will-change-transform'
+            className=' aspect-[0.87/1] w-full rounded-[10px] md:rounded-[20px] lg:rounded-[30px] will-change-transform'
             style={{
-              transform: 'translate3d(calc(var(--mx) * 25px), calc(var(--my) * 25px), 0)'
+              transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
             }}
           >
             <Image
-              src='/images/hero-3.png'
-              alt='hero-3'
-              width={285}
-              height={467}
-              className='w-full h-full object-cover object-center rounded-[10px] sm:rounded-[20px] md:rounded-[30px]'
+              src='/images/hero-4.png'
+              alt='hero-4'
+              height={336}
+              width={293}
+              className='rounded-[10px] md:rounded-[20px] lg:rounded-[30px] w-full h-full object-cover object-center'
             />
           </div>
+        </div>
 
-          {/* Column 4 */}
-          <div className='flex flex-col gap-3 md:gap-5.5 lg:w-[20%] max-w-35 sm:max-w-60 md:max-w-85'>
-            {/* Stats Card 2 */}
-            <div
-              className='min-w-35.75 md:w-73.25 aspect-[.99/1] lg:w-full max-w-35 sm:max-w-60 md:max-w-85 flex flex-col justify-between px-3 py-3.5 sm:px-6 sm:py-7 rounded-[10px] sm:rounded-[20px] md:rounded-[30px] bg-linear-to-b from-gradient-purple-start to-gradient-purple-end text-white will-change-transform'
-              style={{
-                transform: 'translate3d(calc(var(--mx) * 55px), calc(var(--my) * 55px), 0)'
-              }}
-            >
-              <Typography variant='h2'>30+</Typography>
-              <div className='pt-1 sm:pt-4 border-t border-t-white/24'>
-                <Typography variant='p1' className='text-[10px]/[1.2]! sm:text-xl max-w-50'>
-                  Private communities getting ready
-                </Typography>
-              </div>
-            </div>
-
-            {/* Image 4 */}
-            <div
-              className='min-w-35.75 md:w-73.25 aspect-[0.87/1] lg:w-full max-w-35 sm:max-w-60 md:max-w-85 rounded-[10px] sm:rounded-[20px] md:rounded-[30px] will-change-transform'
-              style={{
-                transform: 'translate3d(calc(var(--mx) * 35px), calc(var(--my) * 35px), 0)'
-              }}
-            >
-              <Image
-                src='/images/hero-4.png'
-                alt='hero-4'
-                height={336}
-                width={293}
-                className='rounded-[10px] sm:rounded-[20px] md:rounded-[30px] w-full h-full object-cover object-center'
-              />
-            </div>
-          </div>
-
-          {/* Column 5 */}
-          <div
-            className='rounded-[10px] sm:rounded-[20px] md:rounded-[30px] min-w-34.75 md:w-71.25 lg:w-[20%] max-w-35 sm:max-w-60 md:max-w-85 aspect-[0.61/1] will-change-transform'
-            style={{
-              transform: 'translate3d(calc(var(--mx) * 40px), calc(var(--my) * 40px), 0)'
-            }}
-          >
-            <Image
-              src='/images/hero-5.png'
-              alt='hero-5'
-              width={285}
-              height={467}
-              className='w-full h-full object-cover object-center rounded-[10px] sm:rounded-[20px] md:rounded-[30px]'
-            />
-          </div>
+        {/* Column 5 */}
+        <div
+          className='rounded-[10px] md:rounded-[20px] lg:rounded-[30px] min-w-34.75 md:min-w-auto md:w-[18.5%] aspect-[0.61/1] will-change-transform'
+          style={{
+            transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
+          }}
+        >
+          <Image
+            src='/images/hero-5.png'
+            alt='hero-5'
+            width={285}
+            height={467}
+            className='w-full h-full object-cover object-center rounded-[10px] md:rounded-[20px] lg:rounded-[30px]'
+          />
         </div>
       </div>
     </section>

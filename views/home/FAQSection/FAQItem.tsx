@@ -27,7 +27,6 @@ export function FAQItem({ faq, isOpen, onToggle }: FAQItemProps): React.ReactEle
     <div className='bg-white rounded-2xl border border-gray-100 shadow-[0_8px_17px_0px_rgba(0,0,0,0.04),0_32px_32px_0px_rgba(0,0,0,0.03)] px-4 py-3 sm:px-5 sm:py-4 md:px-6 md:py-5'>
       <button onClick={onToggle} className='w-full flex items-center justify-between gap-3 text-left cursor-pointer'>
         <div className='flex items-center gap-2 min-w-0'>
-          <span className='text-sm sm:text-base font-medium text-[#787878] shrink-0 min-w-6 sm:min-w-7'>{faq.id}/</span>
           <span className='text-base sm:text-lg md:text-[20px] font-medium text-[#1E1E1E] leading-snug'>
             {faq.question}
           </span>

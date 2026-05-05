@@ -41,11 +41,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             key={item.href}
             href={item.href}
             onClick={onClose}
-            className='text-primary hover:underline font-medium transition-colors duration-300'
+            className='text-[18px] font-medium tracking-tight bg-[linear-gradient(#000,#000)] text-transparent font-medium bg-clip-text! hover:bg-linear-to-r hover:from-[#EF9F22] hover:to-[#DE127B] hover:bg-clip-text! transition-all! duration-300!'
           >
-            <Typography variant='p1' className='text-[18px] font-medium tracking-tight'>
-              {item.label}
-            </Typography>
+            {item.label}
           </Link>
         ))}
       </div>

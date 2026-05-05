@@ -84,6 +84,14 @@ const WaitListModal = () => {
         <DialogDescription className='sr-only'>_</DialogDescription>
         <DialogTitle className='sr-only'>_</DialogTitle>
 
+        <button
+          type='button'
+          onClick={handleClose}
+          className='absolute hover:scale-110 transition-transform duration-300 ease-in-out right-4 top-4 size-6 md:size-8 flex justify-center items-center bg-[#E54791] rounded-full z-10'
+        >
+          <X className='size-3.5 md:size-5 text-white' />
+        </button>
+
         <div className='grid grid-cols-1 lg:grid-cols-2 max-h-123'>
           <div className='hidden lg:block lg:pt-10.5 lg:pl-13.75 overflow-hidden'>
             <Image
@@ -104,14 +112,6 @@ const WaitListModal = () => {
               <Typography variant='p3' className='text-white max-w-83.5 mx-auto mt-2'>
                 You’ve successfully joined the waitlist. Get ready for something real.
               </Typography>
-
-              <button
-                type='button'
-                onClick={handleClose}
-                className='absolute right-4 md:right-7.5 top-4 md:top-7.5 size-8 md:size-11 flex justify-center items-center bg-[#E54791] rounded-full'
-              >
-                <X className='size-4 md:size-6 text-white' />
-              </button>
             </div>
           ) : (
             <div className='flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-5 py-8 sm:p-8 md:p-10 lg:p-13.5'>

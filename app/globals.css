@@ -189,3 +189,31 @@ button {
 button:disabled {
   cursor: default;
 }
+
+
+@theme {
+  --animate-gentle-bounce: gentle-bounce 2s infinite;
+  --animate-perfect-bounce: perfect-bounce 3s ease-in-out infinite;
+
+  @keyframes gentle-bounce {
+    0%, 100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes perfect-bounce {
+    0%, 100% {
+      transform: translateY(0) scale(1.03, 0.98);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    50% {
+      transform: translateY(-12px) scale(0.98, 1.03);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+}

@@ -9,12 +9,17 @@ type FeatureCardProps = {
   icon: React.ReactNode
   title: string
   description: string
+  delay?: string
 }
 
-const FeatureCard = ({ icon, title, description }: FeatureCardProps) => (
+const FeatureCard = ({ icon, title, description, delay }: FeatureCardProps) => (
   <div className='bg-white rounded-3xl p-6.25 lg:p-7.5 shadow-[1px_6px_13px_0px_#0000000A,4px_23px_23px_0px_#00000008,9px_52px_32px_0px_#00000005,17px_92px_38px_0px_#00000003,26px_144px_41px_0px_#00000000]'>
-    {icon}
-    <h3 className='text-[20px] lg:text-[24px] leading-7 tracking-[-0.03em] font-semibold text-[#1E1E1E]'>{title}</h3>
+    <span className='animate-perfect-bounce inline-block' style={{ animationDelay: delay }}>
+      {icon}
+    </span>
+    <h3 className='text-[20px] lg:text-[24px] leading-7 tracking-[-0.03em] font-semibold text-[#1E1E1E] mb-2'>
+      {title}
+    </h3>
     <p className='text-[14px] lg:text-[18px] text-[#1E1E1E] font-medium leading-6 tracking-[-0.02em]'>{description}</p>
   </div>
 )
@@ -23,7 +28,7 @@ export default function BenefitsSection(): React.ReactElement {
   return (
     <section className='s-container relative w-full bg-white py-12.5'>
       <div className='text-center mb-8 lg:mb-15'>
-        <Typography variant='h2' className='mb-4 lg:mb-5.5'>{`Discover Suuvo's BenefitsSection`}</Typography>
+        <Typography variant='h2' className='mb-4 lg:mb-5.5'>{`Discover Suuvo's Benefits`}</Typography>
         <p className='text-[14px] lg:text-[16px] font-medium leading-6 tracking-[-0.02em] text-[#1E1E1E] max-w-lg mx-auto '>
           Unlock a world of meaningful connections, tailored experiences, and seamless social interaction.
         </p>
@@ -35,11 +40,13 @@ export default function BenefitsSection(): React.ReactElement {
             icon={<AuthenticIcon />}
             title='Authentic Connections'
             description='Build genuine relationships with like minded individuals.'
+            delay='0ms'
           />
           <FeatureCard
             icon={<GlobalIcon />}
             title='Global Reach'
             description='Connect with people across 50+ countries effortlessly.'
+            delay='300ms'
           />
         </div>
 
@@ -72,11 +79,13 @@ export default function BenefitsSection(): React.ReactElement {
             icon={<PersonalizedIcon />}
             title='Personalized Experience'
             description='Tailored content and recommendations just for you.'
+            delay='600ms'
           />
           <FeatureCard
             icon={<CommunityIcon />}
             title='Community Support'
             description='Join thriving communities around your interests.'
+            delay='900ms'
           />
         </div>
       </div>

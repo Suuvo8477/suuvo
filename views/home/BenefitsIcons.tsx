@@ -5,7 +5,7 @@ type IconWrapperProps = {
 }
 
 const IconWrapper = ({ children }: IconWrapperProps): React.ReactNode => (
-  <div className='w-12 h-12 rounded-2xl bg-linear-to-br from-orange-400 via-rose-500 to-pink-600 flex items-center justify-center shadow-lg shadow-rose-200 mb-4'>
+  <div className='w-12 h-12 rounded-2xl bg-linear-to-br from-orange-400 via-rose-500 to-pink-600 flex items-center justify-center shadow-lg shadow-rose-200 mb-7.5'>
     {children}
   </div>
 )

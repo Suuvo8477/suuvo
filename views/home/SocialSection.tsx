@@ -177,7 +177,7 @@ export default function SocialSection() {
   const p3Range: [number, number] = [0.75, 1.0]
 
   return (
-    <section id='overview' ref={sectionRef} className='pt-10 md:pt-15 relative'>
+    <section id='overview' ref={sectionRef} className='md:pt-15 relative'>
       <div className='absolute right-0 top-[20%] max-w-[50%]'>
         <svg
           width='358'

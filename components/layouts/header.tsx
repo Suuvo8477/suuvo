@@ -19,7 +19,7 @@ export const menuItems: MenuItem[] = [
   { label: 'Home', href: '/#home' },
   { label: 'Overview', href: '/#overview' },
   { label: 'Feature', href: '/#features' },
-  { label: 'FAQ', href: '/#faqs' }
+  { label: 'FAQs', href: '/#faqs' }
 ]
 
 const Header: React.FC = () => {
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
   }, [])
 
   return (
-    <div className='w-full h-0 sticky inset-x-0 top-0 z-100'>
+    <div className='w-full h-0 sticky inset-x-0 top-0 z-102'>
       <div className='relative'>
         <header
           className={`h-20 md:h-24 flex items-center absolute inset-x-0 top-0 z-101 transition-colors duration-300 ${isScrolled ? 'bg-gradient-yellow-start/10 backdrop-blur-md shadow-md shadow-black/10' : 'bg-transparent'}'}`}
@@ -55,9 +55,10 @@ const Header: React.FC = () => {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className='font-medium hover:[&>p]:text-primary! [&>p]:transition-all! [&>p]:duration-300!'
+                    className='bg-[linear-gradient(#000,#000)] text-transparent font-medium bg-clip-text! hover:bg-linear-to-r hover:from-[#EF9F22] hover:to-[#DE127B] hover:bg-clip-text! transition-all! duration-300!'
                   >
-                    <Typography>{item.label}</Typography>
+                    {item.label}
+                    {/* <Typography></Typography> */}
                   </Link>
                 ))}
               </div>
