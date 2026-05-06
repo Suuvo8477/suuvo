@@ -17,7 +17,7 @@ export default function ScrollStackCard({ card, cardIndex, totalCards }: ScrollS
       {/* Tab Label Container - Using Grid for perfect gaps */}
       <div className='grid grid-cols-4 gap-0.5 w-full h-9 translate-y-px relative pointer-events-none'>
         <div
-          className={`w-full h-full px-6 flex items-center justify-center lg:justify-start text-center lg:text-left whitespace-nowrap pointer-events-auto rounded-tl-[9px] rounded-tr-[20px] ${card.labelBgClass}`}
+          className={`hidden w-full h-full px-6 md:flex lg:flex items-center justify-center lg:justify-start text-center lg:text-left whitespace-nowrap pointer-events-auto rounded-tl-[9px] rounded-tr-[20px] ${card.labelBgClass}`}
           style={{ gridColumnStart: cardIndex + 1 }}
         >
           <Typography variant='p4'>
@@ -31,9 +31,9 @@ export default function ScrollStackCard({ card, cardIndex, totalCards }: ScrollS
         className={`relative w-full overflow-hidden p-5 lg:p-10 ${card?.className ?? ''}
           ${
             cardIndex === 0
-              ? 'rounded-tr-4xl rounded-bl-4xl rounded-br-4xl rounded-tl-none'
+              ? 'rounded-tr-4xl rounded-bl-4xl rounded-br-4xl rounded-tl-4xl md:rounded-tl-none lg:rounded-tl-none'
               : cardIndex === totalCards - 1
-                ? 'rounded-tl-4xl rounded-bl-4xl rounded-br-4xl rounded-tr-none'
+                ? 'rounded-tr-4xl rounded-tl-4xl rounded-bl-4xl rounded-br-4xl md:rounded-tr-none lg:rounded-tr-none'
                 : 'rounded-4xl'
           }`}
       >

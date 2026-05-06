@@ -52,8 +52,8 @@ export default function FAQSection(): React.ReactElement {
     <section id='faqs' className='w-full bg-white s-container pb-15 lg:pt-12.5 lg:pb-35'>
       <div className='max-w-205 mx-auto'>
         <Typography variant='h2' className='text-center mb-8 sm:mb-10 md:mb-12'>
-          Everything you might <br className='hidden sm:block' />
-          be wondering about
+          Everything You Might <br className='hidden sm:block' />
+          Be Wondering About
         </Typography>
 
         <div className='flex flex-col gap-4 lg:gap-6'>

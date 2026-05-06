@@ -19,14 +19,14 @@ const cards: Card[] = [
   {
     id: 1,
     src: '/assets/images/image-1.png',
-    showPlay: true,
+    showPlay: false,
     rotate: '-rotate-[12deg]',
     className: 'translate-x-8 z-[4] translate-y-8'
   },
   {
     id: 2,
     src: '/assets/images/image-2.png',
-    showPlay: true,
+    showPlay: false,
     rotate: '-rotate-[0deg]',
     className: 'z-[3]',
     size: 'lg'
@@ -34,16 +34,16 @@ const cards: Card[] = [
   {
     id: 3,
     src: '/assets/images/image-3.png',
-    showPlay: true,
+    showPlay: false,
     rotate: 'rotate-[-8deg]',
     className: '-translate-x-4 z-[2] translate-y-4'
   },
   {
     id: 4,
     src: '/assets/images/image-4-2.png',
-    showPlay: true,
+    showPlay: false,
     rotate: 'rotate-[23deg]',
-    className: '-translate-x-8 z-[1] translate-y-10'
+    className: '-translate-x-20 z-[1] translate-y-10'
   }
 ]
 
@@ -99,7 +99,7 @@ export default function CTASection(): React.ReactElement {
             Pre-Register & <br className='hidden md:block lg:block' /> Get Exclusive Rewards!
           </h2>
           <ul className='flex flex-col md:flex-row lg:flex-row gap-3 lg:gap-5 justify-center mb-6 lg:mb-8 px-3'>
-            {['Free Coins to kickstart your journey', 'Exclusive Welcome Gifts', 'Priority Access to new feature'].map(
+            {['Free Coins To Kickstart Your Journey', 'Exclusive Welcome Gifts', 'Priority Access To New Feature'].map(
               item => (
                 <li key={item} className='flex items-center gap-2.5'>
                   <ListIcon className='text-(--text-secondary)' />

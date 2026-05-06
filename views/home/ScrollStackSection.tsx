@@ -137,7 +137,7 @@ const ScrollStackSection: React.FC = () => {
 
       {/* Stack of Cards */}
       <div ref={sectionRef} className='w-full max-w-283.5 mx-auto px-5 sm:px-6 lg:px-8 relative z-10'>
-        <div className='flex flex-col gap-8 lg:gap-10 relative'>
+        <div className='flex flex-col gap-0 lg:gap-10 relative'>
           {CARDS.map((card, i) => (
             <ScrollStackCard key={`${card.title}-${i}`} card={card} cardIndex={i} totalCards={CARDS.length} />
           ))}

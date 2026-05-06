@@ -46,7 +46,7 @@ export default function BenefitsSection(): React.ReactElement {
             icon={<GlobalIcon />}
             title='Global Reach'
             description='Connect with people across 50+ countries effortlessly.'
-            delay='300ms'
+            delay='0ms'
           />
         </div>
 
@@ -79,13 +79,13 @@ export default function BenefitsSection(): React.ReactElement {
             icon={<PersonalizedIcon />}
             title='Personalized Experience'
             description='Tailored content and recommendations just for you.'
-            delay='600ms'
+            delay='0ms'
           />
           <FeatureCard
             icon={<CommunityIcon />}
             title='Community Support'
             description='Join thriving communities around your interests.'
-            delay='900ms'
+            delay='0ms'
           />
         </div>
       </div>
