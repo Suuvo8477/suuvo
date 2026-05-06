@@ -22,7 +22,7 @@ const cards = [
     color: 'bg-[linear-gradient(180deg,rgb(255,214,143)_0%,rgb(255,183,61)_100%)]',
     icon: '/images/card-icon-02.png',
     image: null,
-    vector: null,
+    vector: '/images/Vector-2.png',
     initialRotate: 5,
     initialY: 0,
     className: 'z-10'
@@ -33,7 +33,7 @@ const cards = [
     color: 'bg-[linear-gradient(180deg,rgb(166,163,255)_0%,rgb(100,95,254)_100%)]',
     icon: '/images/card-icon-03.png',
     image: null,
-    vector: '/images/Vector-2.png',
+    vector: '/images/Vector-1.png',
     initialRotate: 3.5,
     initialY: 24,
     className: '-mt-10 md:mt-0 z-2'
@@ -44,7 +44,7 @@ const cards = [
     color: 'bg-[linear-gradient(0deg,rgb(31,136,255)_0%,rgb(112,180,255)_100%)]',
     icon: '/images/card-icon-04.png',
     image: null,
-    vector: null,
+    vector: '/images/Vector-2.png',
     initialRotate: -6,
     initialY: 8,
     className: '-mt-10 md:mt-0'
@@ -303,7 +303,6 @@ export default function SocialSection() {
                         <Image src={card.vector} alt='bg-vector' fill className='object-contain scale-110' />
                       </div>
                     )}
-
                     {/* Card Icon */}
                     <div className='w-12 h-12 mb-1.5 md:mb-6 relative z-10'>
                       <Image src={card.icon} alt='icon' fill className='object-contain' />

@@ -4,6 +4,7 @@ import './globals.css'
 import StoreProvider from '@/lib/StoreProvider'
 import { cn } from '@/lib/utils'
 import { Toaster } from '@/components/ui/sonner'
+import NoDrag from './noDrag'
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -36,6 +37,7 @@ export default function RootLayout({
       className={cn('antialiased', monaSans.variable, shadowsIntoLightTwo.variable, 'font-sans', geist.variable)}
     >
       <body>
+        <NoDrag />
         <StoreProvider>{children}</StoreProvider>
         <Toaster position='top-center' closeButton />
       </body>
