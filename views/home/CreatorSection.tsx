@@ -214,7 +214,7 @@ export default function CreatorSection(): React.ReactElement {
           Built to empower creators with tools, freedom, and opportunities to grow, monetize content, and build
           meaningful, lasting digital presence.
         </p>
-        <WishListButton className='min-w-56.25' />
+        <WishListButton className='w-full md:w-auto md:min-w-56.25' />
       </div>
     </section>
   )

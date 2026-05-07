@@ -92,7 +92,7 @@ export default function CTASection(): React.ReactElement {
   }
 
   return (
-    <section className='pb-15 md:pb-20 lg:pb-30 s-container'>
+    <section className='pb-15 md:pb-20 lg:pb-33.75 s-container'>
       <div className='rounded-[20px] lg:rounded-4xl  bg-[linear-gradient(90deg,#EF9F22_0%,#DE127B_100%)] pt-8 lg:pt-16 overflow-hidden px-5'>
         <div className=''>
           <h2 className='font-semibold text-[30px] md:text-[45px] lg:text-[64px] leading-9 md:leading-14 lg:leading-17 tracking-[-0.034em] text-(--text-secondary) text-center mb-4 lg:mb-6'>

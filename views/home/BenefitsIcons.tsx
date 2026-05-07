@@ -16,23 +16,23 @@ export const AuthenticIcon = (): React.ReactElement => (
       <path
         d='M18.75 10C18.75 6.54822 15.9517 3.75 12.5 3.75C9.04822 3.75 6.25 6.54822 6.25 10C6.25 13.4517 9.04822 16.25 12.5 16.25C15.9517 16.25 18.75 13.4517 18.75 10Z'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M21.875 26.25V17.5M17.5 21.875H26.25'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M3.75 25C3.75 20.1675 7.66751 16.25 12.5 16.25C14.359 16.25 16.0827 16.8297 17.5 17.8184'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   </IconWrapper>
@@ -66,23 +66,23 @@ export const CommunityIcon = (): React.ReactElement => (
       <path
         d='M25.1061 21.25C25.7311 19.375 26.25 16.796 26.25 15C26.25 8.7868 21.2133 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 16.796 4.2689 19.375 4.8939 21.25'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M11.2206 24.5054L9.04821 18.2659C8.81676 17.6832 8.07712 17.3914 7.46866 17.5371C5.58051 18.1666 4.55775 20.2147 5.18427 22.1119L5.73179 23.7697C6.3583 25.6667 8.39684 26.6944 10.285 26.0649C10.8612 25.8195 11.3806 25.1121 11.2206 24.5054Z'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M18.7794 24.5054L20.9517 18.2659C21.1832 17.6832 21.9229 17.3914 22.5314 17.5371C24.4195 18.1666 25.4422 20.2147 24.8157 22.1119L24.2682 23.7697C23.6417 25.6667 21.6031 26.6944 19.715 26.0649C19.1387 25.8195 18.6194 25.1121 18.7794 24.5054Z'
         stroke='white'
-        stroke-width='2.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   </IconWrapper>

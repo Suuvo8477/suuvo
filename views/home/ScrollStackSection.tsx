@@ -127,11 +127,7 @@ const ScrollStackSection: React.FC = () => {
           </Typography>
 
           {/* Premium CTA Button */}
-          <div className='relative group'>
-            <div className='absolute inset-0 bg-linear-to-r from-[#ef9d13] via-[#ff3d9c] to-[#ff99cb] rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500' />
-
-            <WishListButton className='min-w-50' />
-          </div>
+          <WishListButton className='w-full md:w-auto md:min-w-50' />
         </div>
       </div>
 

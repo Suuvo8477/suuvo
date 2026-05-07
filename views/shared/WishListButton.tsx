@@ -1,8 +1,7 @@
 'use client'
 
 import Button from '@/components/button'
-import { openWaitList } from '@/lib/features/waitList/waitListSlice'
-import { useAppDispatch } from '@/lib/hooks'
+import { useRouter } from 'next/navigation'
 
 type Props = {
   onClick?: () => void
@@ -11,16 +10,15 @@ type Props = {
 }
 
 const WishListButton = ({ onClick, variant = 'primary', className = '' }: Props) => {
-  const dispatch = useAppDispatch()
+  const router = useRouter()
 
   return (
     <Button
-      type='button'
       variant={variant}
-      onClick={e => {
-        e.currentTarget.blur()
+      type='button'
+      onClick={() => {
         onClick?.()
-        dispatch(openWaitList())
+        router.push('/waitlist')
       }}
       className={className}
     >
