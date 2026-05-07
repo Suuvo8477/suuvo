@@ -4,15 +4,8 @@ type LogoIconProps = React.SVGProps<SVGSVGElement>
 
 const LogoIcon = ({ className, ...props }: LogoIconProps) => {
   return (
-    <svg
-      width='44'
-      height='48'
-      viewBox='0 0 44 48'
-      fill='none'
-      xmlns='http://www.w3.org/2000/svg'
-      className={className}
-    >
-      <g clipPath='url(#clip0_2376_14120)'>
+    <svg width='44' height='48' viewBox='0 0 44 48' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      <g clip-path='url(#clip0_2376_14120)'>
         <path
           d='M32.2491 30.3545C30.8528 30.9349 29.508 31.6261 28.2818 32.3406C23.9451 34.9242 20.363 38.0569 16.4998 41.2954C14.5222 42.9534 12.6298 44.7501 10.451 46.1484C9.02248 47.0651 7.24155 47.7138 5.52607 47.4204C2.27119 46.8637 1.47891 42.8611 2.76975 40.2566C3.76828 38.2414 5.79017 36.941 7.72826 35.9442C8.86053 35.3618 10.0385 34.8706 11.2334 34.4321C22.307 30.3692 32.2491 30.3542 32.2491 30.3545Z'
           fill='#EB0B7B'
@@ -28,20 +21,20 @@ const LogoIcon = ({ className, ...props }: LogoIconProps) => {
         <path
           d='M3.10085 37.8293C9.1953 30.3441 28.2848 28.8284 37.5732 28.8752C34.3916 29.2587 31.0549 30.7422 28.3118 32.3406C23.9749 34.924 20.393 38.057 16.5298 41.2955C14.5522 42.9534 12.6598 44.7501 10.4811 46.1485C4.05396 50.6502 -0.994278 43.5829 3.10085 37.8295V37.8293Z'
           stroke='black'
-          strokeWidth='0.846451'
-          strokeLinejoin='round'
+          stroke-width='0.846451'
+          stroke-linejoin='round'
         />
         <path
           d='M35.3349 28.8869C25.8186 27.2719 15.0935 11.4074 10.5576 3.30176C12.459 5.88146 15.394 8.05374 18.1365 9.65325C22.5214 12.1542 27.0126 13.7275 31.7341 15.4935C34.1513 16.3975 36.6472 17.1587 38.9374 18.3658C46.0217 21.7403 42.3594 29.6157 35.3349 28.8869Z'
           stroke='black'
-          strokeWidth='0.846451'
-          strokeLinejoin='round'
+          stroke-width='0.846451'
+          stroke-linejoin='round'
         />
         <path
           d='M11.3375 4.62707C14.8966 13.5995 6.90355 31.0011 2.3296 39.0853C3.54765 36.121 3.88115 32.4846 3.82472 29.3107C3.68647 24.2647 2.70007 19.6093 1.75881 14.6567C1.2769 12.1216 0.632186 9.59292 0.475029 7.00899C-0.317814 -0.797837 8.3143 -1.75517 11.3375 4.62707Z'
           stroke='black'
-          strokeWidth='0.846451'
-          strokeLinejoin='round'
+          stroke-width='0.846451'
+          stroke-linejoin='round'
         />
         <path
           d='M13.0938 18.3043L12.2256 29.0669C12.1898 29.511 12.6483 29.8273 13.0506 29.6363L22.8054 25.0068C23.208 24.8157 23.2526 24.2605 22.8861 24.0074L13.9995 17.8743C13.6327 17.6212 13.1296 17.8599 13.0938 18.304V18.3043Z'
@@ -51,9 +44,9 @@ const LogoIcon = ({ className, ...props }: LogoIconProps) => {
           opacity='0.9'
           d='M13.0547 28.9054L22.2361 24.5437'
           stroke='white'
-          strokeWidth='0.338581'
-          strokeLinecap='round'
-          strokeLinejoin='round'
+          stroke-width='0.338581'
+          stroke-linecap='round'
+          stroke-linejoin='round'
         />
       </g>
       <defs>

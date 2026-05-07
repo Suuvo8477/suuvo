@@ -5,7 +5,7 @@ type SuccessIconProps = React.SVGProps<SVGSVGElement>
 const SuccessIcon = ({ className, ...props }: SuccessIconProps) => {
   return (
     <svg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g clipPath='url(#clip0_2458_4661)'>
+      <g clip-path='url(#clip0_2458_4661)'>
         <path
           opacity='0.2'
           d='M62.065 16.2313C60.385 10.0475 53.9538 3.615 47.7687 1.935C43.9762 0.99 38.8962 0.01625 32 0C25.1038 0.01625 20.0238 0.99 16.2313 1.935C10.0475 3.615 3.615 10.0463 1.935 16.2313C0.99 20.0238 0.01625 25.1038 0 32C0.01625 38.8962 0.99 43.9762 1.935 47.7687C3.615 53.9538 10.0475 60.385 16.2313 62.065C20.0238 63.01 25.1063 63.9837 32 64C38.895 63.9837 43.9762 63.01 47.7687 62.065C53.9538 60.385 60.385 53.9538 62.065 47.7687C63.01 43.9762 63.9837 38.8937 64 32C63.9837 25.1038 63.01 20.0238 62.065 16.2313Z'
@@ -29,9 +29,9 @@ const SuccessIcon = ({ className, ...props }: SuccessIconProps) => {
           y2='16.9712'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stopColor='#00AA47' />
-          <stop offset='0.52' stopColor='#00C050' />
-          <stop offset='1' stopColor='#00F365' />
+          <stop stop-color='#00AA47' />
+          <stop offset='0.52' stop-color='#00C050' />
+          <stop offset='1' stop-color='#00F365' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_2458_4661'
@@ -41,9 +41,9 @@ const SuccessIcon = ({ className, ...props }: SuccessIconProps) => {
           y2='23.2337'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stopColor='#EBF6FC' />
-          <stop offset='0.57' stopColor='#EEF0FC' />
-          <stop offset='1' stopColor='white' />
+          <stop stop-color='#EBF6FC' />
+          <stop offset='0.57' stop-color='#EEF0FC' />
+          <stop offset='1' stop-color='white' />
         </linearGradient>
         <clipPath id='clip0_2458_4661'>
           <rect width='64' height='64' fill='white' />

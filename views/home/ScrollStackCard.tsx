@@ -15,7 +15,7 @@ export default function ScrollStackCard({ card, cardIndex, totalCards }: ScrollS
   return (
     <div className='md:sticky md:top-30 w-full'>
       {/* Tab Label Container - Using Grid for perfect gaps */}
-      <div className='grid grid-cols-4 gap-0.5 w-full h-9 translate-y-px relative pointer-events-none'>
+      <div className='grid grid-cols-6 gap-0.5 w-full h-9 translate-y-px relative pointer-events-none'>
         <div
           className={`hidden w-full h-full px-6 md:flex lg:flex items-center justify-center lg:justify-start text-center lg:text-left whitespace-nowrap pointer-events-auto rounded-tl-[9px] rounded-tr-[20px] ${card.labelBgClass}`}
           style={{ gridColumnStart: cardIndex + 1 }}
@@ -70,21 +70,63 @@ export default function ScrollStackCard({ card, cardIndex, totalCards }: ScrollS
               alt='emoji'
               width={48}
               height={48}
-              className={`absolute size-8 lg:size-12 ${cardIndex === 0 ? 'bottom-6 left-4 rotate-36' : cardIndex === 1 ? 'top-8 lg:top-22 right-0 lg:right-14 -rotate-32' : cardIndex === 2 ? 'bottom-6 lg:bottom-52 left-4 lg:left-auto lg:right-8 -rotate-4' : 'bottom-6 left-4 -rotate-19'}`}
+              className={`absolute size-8 lg:size-12 ${
+                cardIndex === 0
+                  ? 'bottom-6 left-4 rotate-36'
+                  : cardIndex === 1
+                    ? 'top-8 lg:top-22 right-0 lg:right-14 -rotate-32'
+                    : cardIndex === 2
+                      ? 'bottom-6 lg:bottom-52 left-4 lg:left-auto lg:right-8 -rotate-4'
+                      : cardIndex === 3
+                        ? 'bottom-6 left-4 -rotate-19'
+                        : cardIndex === 4 || cardIndex === 5
+                          ? 'bottom-6 lg:left-35 rotate-0'
+                          : 'bottom-6 lg:left-4 -rotate-19'
+              }`}
             />
             <Image
               src={card.decorEmoji2}
               alt='emoji'
               width={48}
               height={48}
-              className={`absolute size-8 lg:size-12 ${cardIndex === 0 ? 'bottom-12 right-4 -rotate-30' : cardIndex === 1 ? 'right-9 lg:right-46 bottom-12 lg:bottom-4' : cardIndex === 2 ? 'bottom-12 lg:bottom-2 right-4 lg:right-auto lg:left-8 -rotate-22' : 'bottom-1/2 lg:bottom-50 right-8 lg:right-16 -rotate-25'}`}
+              className={`absolute size-8 lg:size-12 ${
+                cardIndex === 0
+                  ? 'bottom-12 right-4 -rotate-30'
+                  : cardIndex === 1
+                    ? 'right-9 lg:right-46 bottom-12 lg:bottom-4'
+                    : cardIndex === 2
+                      ? 'bottom-12 lg:bottom-2 right-4 lg:right-auto lg:left-8 -rotate-22'
+                      : cardIndex === 4
+                        ? 'bottom-60 lg:bottom-50 right-6 -rotate-15'
+                        : 'bottom-1/2 lg:bottom-50 right-8 lg:right-16 -rotate-25'
+              }`}
             />
 
             <CircularArrow
-              className={`absolute ${cardIndex === 0 ? 'top-3 lg:top-24 left-28 lg:left-56 rotate-0 lg:rotate-21 text-[#020070]' : cardIndex === 1 ? 'left-4 lg:left-14 bottom-8 lg:bottom-12 -rotate-160 lg:-rotate-90 scale-x-[-1] text-white' : cardIndex === 2 ? 'top-0 left-30 lg:top-26 lg:left-76 lg:rotate-21' : 'left-37 lg:left-90 bottom-8 lg:bottom-13 -rotate-160 lg:rotate-90 scale-x-[-1] lg:scale-x-100 text-white'}`}
+              className={`absolute ${
+                cardIndex === 0
+                  ? 'top-3 lg:top-24 left-28 lg:left-56 rotate-0 lg:rotate-21 text-[#020070]'
+                  : cardIndex === 1
+                    ? 'left-4 lg:left-14 bottom-8 lg:bottom-12 -rotate-160 lg:-rotate-90 scale-x-[-1] text-white'
+                    : cardIndex === 2
+                      ? 'top-0 left-30 lg:top-26 lg:left-76 lg:rotate-21'
+                      : cardIndex === 4
+                        ? 'top-5 lg:top-15 left-30 lg:left-52 -rotate-15 text-[#10594A]'
+                        : 'left-37 lg:left-90 bottom-8 lg:bottom-13 -rotate-160 lg:rotate-90 scale-x-[-1] lg:scale-x-100 text-white'
+              }`}
             />
             <p
-              className={`absolute font-shadow-light ${cardIndex === 0 ? 'top-4 lg:top-30 left-40 lg:left-66 text-[#020070]' : cardIndex === 1 ? 'left-15 lg:left-10 bottom-7 lg:bottom-5 text-white' : cardIndex === 2 ? 'top-0 lg:top-32 left-43 lg:left-84' : 'left-48 lg:left-96 bottom-7 text-white'}`}
+              className={`absolute font-shadow-light ${
+                cardIndex === 0
+                  ? 'top-4 lg:top-30 left-40 lg:left-66 text-[#020070]'
+                  : cardIndex === 1
+                    ? 'left-15 lg:left-10 bottom-7 lg:bottom-5 text-white'
+                    : cardIndex === 2
+                      ? 'top-0 lg:top-32 left-43 lg:left-84'
+                      : cardIndex === 4
+                        ? 'top-5 lg:top-15 left-43 lg:left-65 text-[#10594A]'
+                        : 'left-48 lg:left-96 bottom-7 text-white'
+              }`}
             >
               {card.decorText}
             </p>

@@ -19,6 +19,10 @@
   --gradient-yellow-end: #ffb73d;
   --gradient-blue-start: #70b4ff;
   --gradient-blue-end: #1f88ff;
+  --gradient-teal-start: #5DF8D8;
+  --gradient-teal-end: #48C9AF;
+  --gradient-orange-start: #FFC4B5;
+  --gradient-orange-end: #FF713D;
 
   /* Text Colors */
   --text-primary: #1e1e1e;
@@ -109,6 +113,10 @@
   --color-gradient-yellow-end: var(--gradient-yellow-end);
   --color-gradient-blue-start: var(--gradient-blue-start);
   --color-gradient-blue-end: var(--gradient-blue-end);
+  --color-gradient-teal-start: var(--gradient-teal-start);
+  --color-gradient-teal-end: var(--gradient-teal-end);
+  --color-gradient-orange-start: var(--gradient-orange-start);
+  --color-gradient-orange-end: var(--gradient-orange-end);
 
   /* Text Colors */
   --color-text-primary: var(--text-primary);

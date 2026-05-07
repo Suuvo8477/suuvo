@@ -1,11 +1,12 @@
-import BadgeIcon from '@/components/icons/BadgeIcon'
-import EarlyAccessIcon from '@/components/icons/EarlyAccess'
-import ExclusiveIcon from '@/components/icons/Exclusive'
-import UserIcon2 from '@/components/icons/UserIcon2'
-import Typography from '@/components/typography'
-import { User } from 'lucide-react'
+import BadgeIcon from "@/components/icons/BadgeIcon"
+import EarlyAccessIcon from "@/components/icons/EarlyAccess"
+import ExclusiveIcon from "@/components/icons/Exclusive"
+import UserIcon2 from "@/components/icons/UserIcon2"
+import Typography from "@/components/typography"
+import { User } from "lucide-react"
 
 const FeaturesSection = () => {
+
   const cards = [
     {
       icon: <UserIcon2 />,
@@ -32,21 +33,19 @@ const FeaturesSection = () => {
   return (
     <section>
       <div className='s-container'>
-        <div className='pt-12 sm:pt-18 lg:px-11.75'>
-          <Typography variant='h2' className='max-w-139 text-center mx-auto mb-10 md:mb-15 text-text-primary'>
+        <div className='pt-25 lg:px-11.75'>
+          <Typography variant='h2' className='max-w-139 text-center mx-auto mb-15'>
             Why Reserve Your Username?
           </Typography>
-          <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 xl:gap-21'>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-21">
             {cards.map((card, index) => (
               <div key={index}>
                 <div>
                   <div className='flex items-center mb-4'>{card.icon}</div>
-                  <Typography variant='p1' className='mb-2 sm:text-lg text-text-primary'>
+                  <Typography variant='p1' className='mb-2'>
                     {card.title}
                   </Typography>
-                  <Typography variant='p3' className='sm:text-base text-text-primary'>
-                    {card.description}
-                  </Typography>
+                  <Typography variant='p3'>{card.description}</Typography>
                 </div>
               </div>
             ))}

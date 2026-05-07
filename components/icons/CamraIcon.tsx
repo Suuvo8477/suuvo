@@ -12,8 +12,8 @@ const CameraIcon = ({ className, ...props }: CameraIconProps) => {
       <path
         d='M12.667 18C13.7715 18 14.667 17.1045 14.667 16C14.667 14.8955 13.7715 14 12.667 14M12.667 18C11.5624 18 10.667 17.1045 10.667 16C10.667 14.8955 11.5624 14 12.667 14M12.667 18V14'
         stroke='url(#paint1_linear_2403_20631)'
-        strokeWidth='2.5'
-        strokeLinejoin='round'
+        stroke-width='2.5'
+        stroke-linejoin='round'
       />
       <defs>
         <linearGradient
@@ -24,8 +24,8 @@ const CameraIcon = ({ className, ...props }: CameraIconProps) => {
           y2='16'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stopColor='#EF9F22' />
-          <stop offset='1' stopColor='#DE127B' />
+          <stop stop-color='#EF9F22' />
+          <stop offset='1' stop-color='#DE127B' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_2403_20631'
@@ -35,8 +35,8 @@ const CameraIcon = ({ className, ...props }: CameraIconProps) => {
           y2='16'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stopColor='#EF9F22' />
-          <stop offset='1' stopColor='#DE127B' />
+          <stop stop-color='#EF9F22' />
+          <stop offset='1' stop-color='#DE127B' />
         </linearGradient>
       </defs>
     </svg>

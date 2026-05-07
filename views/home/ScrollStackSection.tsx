@@ -69,11 +69,45 @@ const CARDS: FeatureCard[] = [
       'Earn rewards based on performance and rankings'
     ],
     decorEmoji1: '/assets/emojis/brain.png',
-    decorEmoji2: '/assets/emojis/ludo-cube.png',
+    decorEmoji2: '/assets/emojis/spinner.png',
     decorText: 'Skill Contests',
     mockupSrc: '/assets/images/feature-4.png',
     className: 'bg-linear-to-b from-gradient-pink-start to-gradient-pink-end',
     labelBgClass: 'bg-gradient-pink-start'
+  },
+  {
+    title: 'Love Notes, True Bonds',
+    description:
+      'Express, connect, and build meaningful relationships through private messages, notes, and heartfelt gifts. Because every connection starts with a message.',
+    featureTitle: 'Express Every Emotion',
+    features: [
+      'End-to-end encrypted chats with full control over conversations.',
+      'Send love notes, messages, and emojis that speak from heart.',
+      'Share virtual gifts in a respectful, and spam-free space.'
+    ],
+    decorEmoji1: '/assets/emojis/heart.png',
+    decorEmoji2: '/assets/emojis/gift-box.png',
+    decorText: 'Sweet Messages',
+    mockupSrc: '/assets/images/feature-5.png',
+    className: 'bg-linear-to-b from-gradient-teal-start to-gradient-teal-end',
+    labelBgClass: 'bg-gradient-teal-start'
+  },
+  {
+    title: 'Brand & Advertising',
+    description:
+      'Reach millions through immersive, creator-driven advertising designed for engagement, not interruption. Suuvo connects brands with real audiences through Momentz, LIVE, Shops, and AI-powered targeting.',
+    featureTitle: 'Smart Brand Promotion',
+    features: [
+      'AI-powered targeting based on real user behavior and interests.',
+      'Collaborate with creators and influencers that drive real impact.',
+      'Ads that feel like content across Momentz, LIVE, Shops and Arena.'
+    ],
+    decorEmoji1: '/assets/emojis/speaker.png',
+    decorEmoji2: '/assets/emojis/archary.png',
+    decorText: 'Smart Reach',
+    mockupSrc: '/assets/images/feature-6.png',
+    className: 'bg-linear-to-b from-gradient-orange-start to-gradient-orange-end',
+    labelBgClass: 'bg-gradient-orange-start'
   }
 ]
 

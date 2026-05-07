@@ -18,8 +18,8 @@ const UserIcon2 = ({ className, ...props }: UserIcon2Props) => {
           y2='16.0005'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stopColor='#EF9F22' />
-          <stop offset='1' stopColor='#DE127B' />
+          <stop stop-color='#EF9F22' />
+          <stop offset='1' stop-color='#DE127B' />
         </linearGradient>
       </defs>
     </svg>

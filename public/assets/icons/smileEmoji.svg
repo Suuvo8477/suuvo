@@ -1,5 +1,5 @@
 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clipPath="url(#clip0_2218_6679)">
+<g clip-path="url(#clip0_2218_6679)">
 <g filter="url(#filter0_iii_2218_6679)">
 <path d="M0 23.3739C0 10.4648 10.4649 -0.00012207 23.374 -0.00012207H25.813C39.1711 -0.00012207 50 10.8288 50 24.1869V25.8129C50 39.171 39.1711 49.9999 25.813 49.9999H25C11.1929 49.9999 0 38.807 0 24.9999V23.3739Z" fill="url(#paint0_radial_2218_6679)"/>
 </g>
@@ -131,20 +131,20 @@
 <feBlend mode="normal" in2="effect2_innerShadow_2218_6679" result="effect3_innerShadow_2218_6679"/>
 </filter>
 <radialGradient id="paint0_radial_2218_6679" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(22.1545 3.25191) rotate(86.5167) scale(46.8345)">
-<stop offset="0.576389" stopColor="#FFC122"/>
-<stop offset="1" stopColor="#FFCE21"/>
+<stop offset="0.576389" stop-color="#FFC122"/>
+<stop offset="1" stop-color="#FFCE21"/>
 </radialGradient>
 <linearGradient id="paint1_linear_2218_6679" x1="24.8989" y1="37.7032" x2="21.8501" y2="20.2236" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FB39A2"/>
-<stop offset="1" stopColor="#C520FF"/>
+<stop stop-color="#FB39A2"/>
+<stop offset="1" stop-color="#C520FF"/>
 </linearGradient>
 <linearGradient id="paint2_linear_2218_6679" x1="24.8989" y1="37.7032" x2="15.7525" y2="18.3943" gradientUnits="userSpaceOnUse">
-<stop stopColor="#3A2EC0"/>
-<stop offset="1" stopColor="#FF20C1"/>
+<stop stop-color="#3A2EC0"/>
+<stop offset="1" stop-color="#FF20C1"/>
 </linearGradient>
 <radialGradient id="paint3_radial_2218_6679" cx="0" cy="0" r="1" gradientTransform="matrix(0.143764 8.09538 -10.2072 0.114019 24.6539 31.4371)" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FC4141"/>
-<stop offset="1" stopColor="#FF0F0F"/>
+<stop stop-color="#FC4141"/>
+<stop offset="1" stop-color="#FF0F0F"/>
 </radialGradient>
 <clipPath id="clip0_2218_6679">
 <rect width="50" height="50" fill="white"/>
