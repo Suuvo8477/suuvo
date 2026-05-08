@@ -45,7 +45,7 @@ const WishListJoinStatusModal = ({ open, onOpenChange, status }: Props) => {
               </Typography>
               <Image src='/images/group_people.png' alt='perple' width={184} height={48} className='mx-auto mb-2' />
               <Typography variant='p4' className='text-center mx-auto mb-8.5'>
-                You’re among <span className='text-red-400'>9,000+</span> early members!
+                You’re among <span className='text-red-400'>100k+</span> early members!
               </Typography>
               <Button
                 variant='primary'

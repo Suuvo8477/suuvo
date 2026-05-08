@@ -43,19 +43,29 @@ const FeaturesSection = () => {
   return (
     <section>
       <div className='s-container'>
-        <div className='pb-33.75'>
-          <Typography variant='h3' className=' text-center mx-auto mb-15 flex items-center justify-center gap-5'>
-            <span>Why</span> <LogoIcon /> <span>SUUVO Stand Out</span>
+        <div className='mb-15 md:pb-33.75'>
+          <Typography
+            variant='h3'
+            className='flex items-center gap-2 flex-wrap justify-center text-center mx-auto mb-6 sm:mb-10 md:mb-15'
+          >
+            <span>Why</span>{' '}
+            <span className='flex items-center gap-1'>
+              {' '}
+              <LogoIcon className='max-sm:w-8 max-sm:h-8' /> Suuvo{' '}
+            </span>{' '}
+            <span>Stand Out</span>
           </Typography>
-          <div className='grid grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 2xl:gap-10 lg:gap-8'>
             {cards.map((card, index) => (
               <div key={index}>
                 <div>
                   <div className='flex items-center mb-4'>{card.icon}</div>
-                  <Typography variant='p1' className='mb-2 font-bold!'>
+                  <Typography variant='p1' className='mb-2 font-bold! sm:text-lg'>
                     {card.title}
                   </Typography>
-                  <Typography variant='p3' className='text-black'>{card.description}</Typography>
+                  <Typography variant='p3' className='text-black  sm:text-base'>
+                    {card.description}
+                  </Typography>
                 </div>
               </div>
             ))}

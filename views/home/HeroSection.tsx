@@ -84,8 +84,8 @@ const HeroSection = () => {
                   </div>
                 ))}
               </div>
-              <Typography variant='p2' className='lg:max-w-19.75'>
-                2k+ Early Signups
+              <Typography variant='p2' className='lg:max-w-25'>
+                100k+ Early Signups
               </Typography>
             </div>
           </div>
@@ -133,7 +133,7 @@ const HeroSection = () => {
               transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
             }}
           >
-            <Typography variant='h2'>2k+</Typography>
+            <Typography variant='h2' className='text-[30px]/[1.4]!  sm:text-[36px]! md:text-[40px]! lg:text-[48px]! xl:text-[64px]!'>100k+</Typography>
             <div className='pt-4 border-t border-t-white/24'>
               <Typography variant='p1' className='text-[10px]/[1.2]! sm:text-xl!  max-w-50'>
                 Early signups on the waitlist
@@ -167,7 +167,7 @@ const HeroSection = () => {
               transform: 'translate3d(calc(var(--mx) * 30px), calc(var(--my) * 30px), 0)'
             }}
           >
-            <Typography variant='h2'>30+</Typography>
+            <Typography variant='h2' className='text-[30px]/[1.4]!  sm:text-[36px]! md:text-[40px]! lg:text-[48px]! xl:text-[64px]!'>30+</Typography>
             <div className='pt-1 sm:pt-4 border-t border-t-white/24'>
               <Typography variant='p1' className='text-[10px]/[1.2]! sm:text-xl! max-w-50'>
                 Private communities getting ready

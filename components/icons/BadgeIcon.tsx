@@ -18,8 +18,8 @@ const BadgeIcon = ({ className, ...props }: BadgeIconProps) => {
           y2='16.0005'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#EF9F22' />
-          <stop offset='1' stop-color='#DE127B' />
+          <stop stopColor='#EF9F22' />
+          <stop offset='1' stopColor='#DE127B' />
         </linearGradient>
       </defs>
     </svg>

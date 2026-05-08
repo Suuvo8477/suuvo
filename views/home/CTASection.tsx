@@ -5,6 +5,7 @@ import PhotoCard from './PhotoCard'
 import Button from '@/components/button'
 import { ListIcon } from '@/components/icons'
 import { toast } from 'sonner'
+import WishListButton from '../shared/WishListButton'
 
 type Card = {
   id: number
@@ -111,22 +112,9 @@ export default function CTASection(): React.ReactElement {
             )}
           </ul>
         </div>
-        <form
-          onSubmit={handleSubmit}
-          className='flex items-center bg-white rounded-full pl-6 pr-2 lg:pr-1.5 py-2 w-full max-w-121 mx-auto mb-8 lg:mb-15'
-        >
-          <input
-            type='email'
-            id='email'
-            name='email'
-            placeholder='Email Address'
-            className='bg-transparent outline-none text-text-primary placeholder:text-text-primary font-medium text-[16px] w-full leading-6 tracking-[-0.02em]'
-          />
-          <Button type='submit' className='min-w-34 h-11 text-base' disabled={isLoading}>
-            {isLoading ? 'Submitting...' : 'Submit'}
-          </Button>
-        </form>
-        <div className='relative mt-8 flex items-end justify-center'>
+        <WishListButton variant='secondary' className='min-w-46 block mx-auto z-50 relative' />
+
+        <div className='relative mt-8 sm:mt-12 lg:mt-18 flex items-end justify-center'>
           <div className='flex items-end justify-center -mb-16 sm:-mb-20 lg:-mb-25'>
             {cards.map(card => (
               <PhotoCard key={card.id} {...card} />
