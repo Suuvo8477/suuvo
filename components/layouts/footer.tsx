@@ -14,9 +14,39 @@ import FeaturesSection from '@/views/home/FeaturesSection'
 
 const navigationLinks: string[] = ['Home', 'Momentz', 'Live', 'PK Battles', 'Shop', 'Love Notes', 'AI Features']
 
-const legalLinks: string[] = ['Privacy Policy', 'Terms & Condition', 'Community Guidelines', 'Creator Policies']
+const legalLinks: {url: string, label: string}[] = [
+  {
+    url: '/privacy-policy',
+    label: 'Privacy Policy',
+  },
+  {
+    url: '/terms-and-conditions',
+    label: 'Terms & Condition',
+  },
+  {
+    url: '/community-guidelines',
+    label: 'Community Guidelines',
+  },
+  {
+    url: '/#',
+    label: 'Creator Policies',
+  }
+]
 
-const supportLinks: string[] = ['Help Center', 'Contact Support', 'Report a Problem']
+const supportLinks: {url: string, label: string}[] = [
+  {
+    url: '/help-center',
+    label: 'Help Center',
+  },
+  {
+    url: '/#',
+    label: 'Contact Support',
+  },
+  {
+    url: '#',
+    label: 'Report a Problem',
+  },
+]
 
 const Footer: React.FC = () => {
   const pathname = usePathname()
@@ -60,10 +90,10 @@ const Footer: React.FC = () => {
               <div className='text-base leading-5'>
                 <h3 className='font-semibold tracking-[-0.03em]'>Support</h3>
                 <ul className='mt-4 space-y-4 '>
-                  {supportLinks.map(item => (
-                    <li key={item}>
-                      <Link href='/' className='font-medium tracking-[-0.02em]'>
-                        {item}
+                  {supportLinks.map((item, index) => (
+                    <li key={index}>
+                      <Link href={item.url} className='font-medium tracking-[-0.02em]'>
+                        {item.label}
                       </Link>
                     </li>
                   ))}
@@ -75,10 +105,10 @@ const Footer: React.FC = () => {
               <div className='text-base leading-5'>
                 <h3 className='font-semibold tracking-[-0.03em]'>Legal</h3>
                 <ul className='mt-4 space-y-4 '>
-                  {legalLinks.map(item => (
-                    <li key={item}>
-                      <Link href='/' className='font-medium tracking-[-0.02em]'>
-                        {item}
+                  {legalLinks.map((item, index) => (
+                    <li key={index}>
+                      <Link href={item.url} className='font-medium tracking-[-0.02em]'>
+                        {item.label}
                       </Link>
                     </li>
                   ))}
@@ -125,10 +155,10 @@ const Footer: React.FC = () => {
             <div className='text-base leading-5'>
               <h3 className='font-semibold tracking-[-0.03em]'>Legal</h3>
               <ul className='mt-4 space-y-4 '>
-                {legalLinks.map(item => (
-                  <li key={item}>
-                    <Link href='/' className='font-medium leading-6 tracking-[-0.02em]'>
-                      {item}
+                {legalLinks.map((item,index) => (
+                  <li key={index}>
+                    <Link href={item.url} className='font-medium leading-6 tracking-[-0.02em]'>
+                      {item.label}
                     </Link>
                   </li>
                 ))}
@@ -138,10 +168,10 @@ const Footer: React.FC = () => {
             <div className='text-base leading-5'>
               <h3 className='font-semibold tracking-[-0.03em]'>Support</h3>
               <ul className='mt-4 space-y-4 '>
-                {supportLinks.map(item => (
-                  <li key={item}>
-                    <Link href='/' className='font-medium leading-6 tracking-[-0.02em]'>
-                      {item}
+                {supportLinks.map((item, index) => (
+                  <li key={index}>
+                    <Link href={item.url} className='font-medium leading-6 tracking-[-0.02em]'>
+                      {item.label}
                     </Link>
                   </li>
                 ))}
