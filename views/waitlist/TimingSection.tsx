@@ -3,7 +3,7 @@ import Typography from '@/components/typography'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-const TARGET_DATE = new Date('2026-06-30T00:00:00')
+const TARGET_DATE = new Date('2026-08-21T00:00:00')
 
 const pad = (n: number) => String(Math.max(0, n)).padStart(2, '0')
 
